@@ -31,8 +31,6 @@ Udemig Education enables users to:
 - **Bootstrap Icons** (Icons)
 - **Font Awesome** (Icons)
 
-## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Desktop%20Computer.png" width="25" /> Demo
-
 ## Preview
 
 ![Project Demo](screen.gif)
@@ -47,10 +45,10 @@ git clone https://github.com/veyseldemircan/UdemigEducation.git
 
 # Navigate to the project folder
 cd UdemigEducation
+```
 
 📧 Contact
 
 For any questions or feedback, feel free to contact:
 
-Veysel Demircan – [EMAIL_ADDRESS]
-```
+Veysel Demircan – veyseldemircana@gmail.com
