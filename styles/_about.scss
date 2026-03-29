@@ -1,0 +1,46 @@
+@import "./variables";
+@import "./header";
+@import "./global";
+@import "./hero";
+@import "./education";
+
+.about-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 9rem;
+  align-items: center;
+  .row {
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+    h5 {
+      letter-spacing: 2px;
+      color: $main-color;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 24px;
+    }
+    h2 {
+      margin: 20px 0;
+      font-size: 3rem;
+      font-weight: 800;
+      line-height: 1.2;
+    }
+    p {
+      font-size: 1rem;
+      font-weight: 500;
+      color: rgba(255, 255, 255, 0.67);
+      margin-bottom: 35px;
+      line-height: 30px;
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+  }
+}

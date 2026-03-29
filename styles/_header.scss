@@ -1,0 +1,106 @@
+@import "./global";
+
+header {
+  .nav {
+    background: rgba(255, 255, 255, 0.24);
+    border-radius: 0 0 16px 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(12.5px);
+    -webkit-backdrop-filter: blur(12.5px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    @extend .flex;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 27px 17px;
+    z-index: 1000;
+  }
+
+  .logo {
+    a {
+      color: $text-color;
+      font-size: 33px;
+      font-weight: 700;
+      span {
+        color: $main-color;
+      }
+    }
+  }
+
+  .nav-btn {
+    @extend .flex;
+    a {
+      display: inline-block;
+      color: $text-color;
+      transition: all 0.6s ease;
+      font-size: $p-font;
+      font-weight: 500;
+      margin: 15px 22px;
+      text-transform: uppercase;
+      padding: 10px;
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+  .nav-btn a:hover,
+  .nav-contact a:hover {
+    color: $main-color;
+  }
+
+  .nav-contact {
+    @extend .flex;
+
+    a {
+      color: $text-color;
+      transition: all 0.6s ease;
+      font-size: 20px;
+      margin-right: 18px;
+      transition: $transition;
+      margin-left: 5px;
+      &:hover {
+        transform: translateY(-3px);
+      }
+    }
+    a:first-child {
+      font-size: $p-font;
+      margin-left: 20px;
+    }
+    a:last-child {
+      font-size: 30px;
+      font-weight: 700;
+      display: none;
+    }
+  }
+}
+@media (max-width: 1300px) {
+  .nav-btn {
+    position: fixed;
+    top: -700%;
+    right: 0;
+    flex-direction: column;
+    display: none;
+    background: rgba(255, 255, 255, 0.24);
+    border-radius: 16px;
+    margin: 0 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(12.5px);
+    -webkit-backdrop-filter: blur(12.5px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    padding: 20px 0px;
+  }
+  .nav-btn.open {
+    display: flex;
+    top: 120%;
+  }
+
+  #menu-btn {
+    display: block;
+  }
+}
+@media (max-width: 800px) {
+  .nav-contact a:not(:last-child) {
+    display: none;
+  }
+}

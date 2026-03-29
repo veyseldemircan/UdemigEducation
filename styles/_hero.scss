@@ -1,0 +1,84 @@
+#hero {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(/images/group.jpeg);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+}
+.hero-title {
+  float: left;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+
+  h5 {
+    color: $main-color;
+    font-weight: 600;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  h1 {
+    font-size: $h1-font;
+    margin-bottom: 20px;
+    font-weight: 800;
+    line-height: 1.2;
+  }
+  p {
+    margin-bottom: 35px;
+    color: $gray;
+    font-size: $p-font;
+    font-weight: 500;
+  }
+}
+@media (max-width: 1300px) {
+  .hero-title {
+    float: left;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    h5 {
+      color: $main-color;
+      font-weight: 600;
+      letter-spacing: 6px;
+      text-transform: uppercase;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    h1 {
+      font-size: 60px;
+      margin-bottom: 20px;
+      font-weight: 800;
+      line-height: 1.2;
+    }
+    p {
+      margin-bottom: 35px;
+      color: $gray;
+      font-size: $p-font;
+      font-weight: 500;
+    }
+  }
+}
+.btn {
+  background-color: $main-color;
+  padding: 13px 40px;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  transition: $transition;
+  border: 1px solid rgba(255, 255, 255, 0);
+  &:hover {
+    transform: translateX(10px);
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 1);
+    color: white;
+  }
+}
